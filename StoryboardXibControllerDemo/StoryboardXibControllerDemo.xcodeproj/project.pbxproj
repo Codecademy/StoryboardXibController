@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C55625418DE22B300989DBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C55625318DE22B300989DBE /* Foundation.framework */; };
+		3C55625618DE22B300989DBE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C55625518DE22B300989DBE /* CoreGraphics.framework */; };
+		3C55625818DE22B300989DBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C55625718DE22B300989DBE /* UIKit.framework */; };
+		3C55625E18DE22B300989DBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C55625C18DE22B300989DBE /* InfoPlist.strings */; };
+		3C55626018DE22B300989DBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C55625F18DE22B300989DBE /* main.m */; };
+		3C55626418DE22B300989DBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C55626318DE22B300989DBE /* AppDelegate.m */; };
+		3C55626618DE22B300989DBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C55626518DE22B300989DBE /* Images.xcassets */; };
+		3C55626D18DE22B300989DBE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C55626C18DE22B300989DBE /* XCTest.framework */; };
+		3C55626E18DE22B300989DBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C55625318DE22B300989DBE /* Foundation.framework */; };
+		3C55626F18DE22B300989DBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C55625718DE22B300989DBE /* UIKit.framework */; };
+		3C55627718DE22B300989DBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C55627518DE22B300989DBE /* InfoPlist.strings */; };
+		3C55627918DE22B300989DBE /* StoryboardXibControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C55627818DE22B300989DBE /* StoryboardXibControllerDemoTests.m */; };
+		3C55628518DE232400989DBE /* StoryboardXibController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C55628418DE232400989DBE /* StoryboardXibController.m */; };
+		3C55628618DE232400989DBE /* StoryboardXibController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C55628418DE232400989DBE /* StoryboardXibController.m */; };
+		3C55628818DE261400989DBE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C55628718DE261400989DBE /* Storyboard.storyboard */; };
+		3C55628918DE261400989DBE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C55628718DE261400989DBE /* Storyboard.storyboard */; };
+		3C55628B18DE265900989DBE /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C55628A18DE265900989DBE /* View.xib */; };
+		3C55628C18DE265900989DBE /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C55628A18DE265900989DBE /* View.xib */; };
+		3C55628F18DE266800989DBE /* XibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C55628E18DE266800989DBE /* XibViewController.m */; };
+		3C55629018DE266800989DBE /* XibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C55628E18DE266800989DBE /* XibViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C55627018DE22B300989DBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C55624818DE22B300989DBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C55624F18DE22B300989DBE;
+			remoteInfo = StoryboardXibControllerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C4DE81118E7BBD100D64345 /* StoryboardXibControllerDemo.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = StoryboardXibControllerDemo.podspec; path = ../StoryboardXibControllerDemo.podspec; sourceTree = "<group>"; };
+		3C55625018DE22B300989DBE /* StoryboardXibControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardXibControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C55625318DE22B300989DBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3C55625518DE22B300989DBE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3C55625718DE22B300989DBE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3C55625B18DE22B300989DBE /* StoryboardXibControllerDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StoryboardXibControllerDemo-Info.plist"; sourceTree = "<group>"; };
+		3C55625D18DE22B300989DBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3C55625F18DE22B300989DBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3C55626118DE22B300989DBE /* StoryboardXibControllerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StoryboardXibControllerDemo-Prefix.pch"; sourceTree = "<group>"; };
+		3C55626218DE22B300989DBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3C55626318DE22B300989DBE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3C55626518DE22B300989DBE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3C55626B18DE22B300989DBE /* StoryboardXibControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryboardXibControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C55626C18DE22B300989DBE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3C55627418DE22B300989DBE /* StoryboardXibControllerDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StoryboardXibControllerDemoTests-Info.plist"; sourceTree = "<group>"; };
+		3C55627618DE22B300989DBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3C55627818DE22B300989DBE /* StoryboardXibControllerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryboardXibControllerDemoTests.m; sourceTree = "<group>"; };
+		3C55628318DE232400989DBE /* StoryboardXibController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardXibController.h; sourceTree = "<group>"; };
+		3C55628418DE232400989DBE /* StoryboardXibController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardXibController.m; sourceTree = "<group>"; };
+		3C55628718DE261400989DBE /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		3C55628A18DE265900989DBE /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		3C55628D18DE266800989DBE /* XibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibViewController.h; sourceTree = "<group>"; };
+		3C55628E18DE266800989DBE /* XibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C55624D18DE22B300989DBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C55625618DE22B300989DBE /* CoreGraphics.framework in Frameworks */,
+				3C55625818DE22B300989DBE /* UIKit.framework in Frameworks */,
+				3C55625418DE22B300989DBE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C55626818DE22B300989DBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C55626D18DE22B300989DBE /* XCTest.framework in Frameworks */,
+				3C55626F18DE22B300989DBE /* UIKit.framework in Frameworks */,
+				3C55626E18DE22B300989DBE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C55624718DE22B300989DBE = {
+			isa = PBXGroup;
+			children = (
+				3C4DE81118E7BBD100D64345 /* StoryboardXibControllerDemo.podspec */,
+				3C55628218DE22F800989DBE /* StoryboardXibController */,
+				3C55625918DE22B300989DBE /* StoryboardXibControllerDemo */,
+				3C55627218DE22B300989DBE /* StoryboardXibControllerDemoTests */,
+				3C55625218DE22B300989DBE /* Frameworks */,
+				3C55625118DE22B300989DBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C55625118DE22B300989DBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C55625018DE22B300989DBE /* StoryboardXibControllerDemo.app */,
+				3C55626B18DE22B300989DBE /* StoryboardXibControllerDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C55625218DE22B300989DBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C55625318DE22B300989DBE /* Foundation.framework */,
+				3C55625518DE22B300989DBE /* CoreGraphics.framework */,
+				3C55625718DE22B300989DBE /* UIKit.framework */,
+				3C55626C18DE22B300989DBE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C55625918DE22B300989DBE /* StoryboardXibControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3C55626218DE22B300989DBE /* AppDelegate.h */,
+				3C55626318DE22B300989DBE /* AppDelegate.m */,
+				3C55626518DE22B300989DBE /* Images.xcassets */,
+				3C55625A18DE22B300989DBE /* Supporting Files */,
+				3C55628718DE261400989DBE /* Storyboard.storyboard */,
+				3C55628A18DE265900989DBE /* View.xib */,
+				3C55628D18DE266800989DBE /* XibViewController.h */,
+				3C55628E18DE266800989DBE /* XibViewController.m */,
+			);
+			path = StoryboardXibControllerDemo;
+			sourceTree = "<group>";
+		};
+		3C55625A18DE22B300989DBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C55625B18DE22B300989DBE /* StoryboardXibControllerDemo-Info.plist */,
+				3C55625C18DE22B300989DBE /* InfoPlist.strings */,
+				3C55625F18DE22B300989DBE /* main.m */,
+				3C55626118DE22B300989DBE /* StoryboardXibControllerDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C55627218DE22B300989DBE /* StoryboardXibControllerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C55627818DE22B300989DBE /* StoryboardXibControllerDemoTests.m */,
+				3C55627318DE22B300989DBE /* Supporting Files */,
+			);
+			path = StoryboardXibControllerDemoTests;
+			sourceTree = "<group>";
+		};
+		3C55627318DE22B300989DBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C55627418DE22B300989DBE /* StoryboardXibControllerDemoTests-Info.plist */,
+				3C55627518DE22B300989DBE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C55628218DE22F800989DBE /* StoryboardXibController */ = {
+			isa = PBXGroup;
+			children = (
+				3C55628318DE232400989DBE /* StoryboardXibController.h */,
+				3C55628418DE232400989DBE /* StoryboardXibController.m */,
+			);
+			name = StoryboardXibController;
+			path = ../StoryboardXibController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C55624F18DE22B300989DBE /* StoryboardXibControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C55627C18DE22B300989DBE /* Build configuration list for PBXNativeTarget "StoryboardXibControllerDemo" */;
+			buildPhases = (
+				3C55624C18DE22B300989DBE /* Sources */,
+				3C55624D18DE22B300989DBE /* Frameworks */,
+				3C55624E18DE22B300989DBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StoryboardXibControllerDemo;
+			productName = StoryboardXibControllerDemo;
+			productReference = 3C55625018DE22B300989DBE /* StoryboardXibControllerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C55626A18DE22B300989DBE /* StoryboardXibControllerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C55627F18DE22B300989DBE /* Build configuration list for PBXNativeTarget "StoryboardXibControllerDemoTests" */;
+			buildPhases = (
+				3C55626718DE22B300989DBE /* Sources */,
+				3C55626818DE22B300989DBE /* Frameworks */,
+				3C55626918DE22B300989DBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C55627118DE22B300989DBE /* PBXTargetDependency */,
+			);
+			name = StoryboardXibControllerDemoTests;
+			productName = StoryboardXibControllerDemoTests;
+			productReference = 3C55626B18DE22B300989DBE /* StoryboardXibControllerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C55624818DE22B300989DBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Codecademy;
+				TargetAttributes = {
+					3C55626A18DE22B300989DBE = {
+						TestTargetID = 3C55624F18DE22B300989DBE;
+					};
+				};
+			};
+			buildConfigurationList = 3C55624B18DE22B300989DBE /* Build configuration list for PBXProject "StoryboardXibControllerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3C55624718DE22B300989DBE;
+			productRefGroup = 3C55625118DE22B300989DBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C55624F18DE22B300989DBE /* StoryboardXibControllerDemo */,
+				3C55626A18DE22B300989DBE /* StoryboardXibControllerDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C55624E18DE22B300989DBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C55628B18DE265900989DBE /* View.xib in Resources */,
+				3C55625E18DE22B300989DBE /* InfoPlist.strings in Resources */,
+				3C55626618DE22B300989DBE /* Images.xcassets in Resources */,
+				3C55628818DE261400989DBE /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C55626918DE22B300989DBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C55627718DE22B300989DBE /* InfoPlist.strings in Resources */,
+				3C55628C18DE265900989DBE /* View.xib in Resources */,
+				3C55628918DE261400989DBE /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C55624C18DE22B300989DBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C55626418DE22B300989DBE /* AppDelegate.m in Sources */,
+				3C55626018DE22B300989DBE /* main.m in Sources */,
+				3C55628518DE232400989DBE /* StoryboardXibController.m in Sources */,
+				3C55628F18DE266800989DBE /* XibViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C55626718DE22B300989DBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C55627918DE22B300989DBE /* StoryboardXibControllerDemoTests.m in Sources */,
+				3C55629018DE266800989DBE /* XibViewController.m in Sources */,
+				3C55628618DE232400989DBE /* StoryboardXibController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C55627118DE22B300989DBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C55624F18DE22B300989DBE /* StoryboardXibControllerDemo */;
+			targetProxy = 3C55627018DE22B300989DBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C55625C18DE22B300989DBE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C55625D18DE22B300989DBE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3C55627518DE22B300989DBE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C55627618DE22B300989DBE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C55627A18DE22B300989DBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C55627B18DE22B300989DBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C55627D18DE22B300989DBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StoryboardXibControllerDemo/StoryboardXibControllerDemo-Prefix.pch";
+				INFOPLIST_FILE = "StoryboardXibControllerDemo/StoryboardXibControllerDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3C55627E18DE22B300989DBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StoryboardXibControllerDemo/StoryboardXibControllerDemo-Prefix.pch";
+				INFOPLIST_FILE = "StoryboardXibControllerDemo/StoryboardXibControllerDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3C55628018DE22B300989DBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StoryboardXibControllerDemo.app/StoryboardXibControllerDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StoryboardXibControllerDemo/StoryboardXibControllerDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "StoryboardXibControllerDemoTests/StoryboardXibControllerDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3C55628118DE22B300989DBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StoryboardXibControllerDemo.app/StoryboardXibControllerDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StoryboardXibControllerDemo/StoryboardXibControllerDemo-Prefix.pch";
+				INFOPLIST_FILE = "StoryboardXibControllerDemoTests/StoryboardXibControllerDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C55624B18DE22B300989DBE /* Build configuration list for PBXProject "StoryboardXibControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C55627A18DE22B300989DBE /* Debug */,
+				3C55627B18DE22B300989DBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C55627C18DE22B300989DBE /* Build configuration list for PBXNativeTarget "StoryboardXibControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C55627D18DE22B300989DBE /* Debug */,
+				3C55627E18DE22B300989DBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C55627F18DE22B300989DBE /* Build configuration list for PBXNativeTarget "StoryboardXibControllerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C55628018DE22B300989DBE /* Debug */,
+				3C55628118DE22B300989DBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C55624818DE22B300989DBE /* Project object */;
+}
