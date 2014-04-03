@@ -2,3 +2,4 @@ language: objective-c
 xcode_project: StoryboardXibControllerDemo/StoryboardXibControllerDemo.xcodeproj
 xcode_scheme: StoryboardXibControllerDemo
 before_install: gem install cocoapods
+xcode_sdk: iphonesimulator
