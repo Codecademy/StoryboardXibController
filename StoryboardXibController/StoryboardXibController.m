@@ -10,12 +10,13 @@
 
 @interface StoryboardXibController ()
 
-@property (strong, readwrite) UIViewController *containedController;
 @property (strong, readwrite) NSTimer *containedViewDidLoadCheck; //HACK
 
 @end
 
 @implementation StoryboardXibController
+
+@synthesize containedController = _containedController;
 
 -( void )setValue:( id )value forUndefinedKey:( NSString* )key
 {
@@ -43,7 +44,7 @@
     // TODO: report invalid class or nib file not found, each explicitly
     if ( [screenControllerClass isSubclassOfClass:[UIViewController class] ] && self.screenNib)
     {
-        self.containedController = [ [screenControllerClass alloc] initWithNibName:self.screenNib bundle:[NSBundle mainBundle] ];
+        _containedController = [ [screenControllerClass alloc] initWithNibName:self.screenNib bundle:[NSBundle mainBundle] ];
         [self addChildViewController:self.containedController];
 
         // yes, getters should not be used for side effects UIKit, but why you gotta only start loading when I do??

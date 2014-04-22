@@ -13,4 +13,6 @@
 @property (readwrite) NSString *screenControllerClass;
 @property (readwrite) NSString *screenNib;
 
+@property (strong, readonly) UIViewController *containedController;
+
 @end
