@@ -15,4 +15,6 @@
 
 @property (strong, readonly) UIViewController *containedController;
 
+@property (strong, readwrite) void (^containedControllerLoadedHandler)(StoryboardXibController *storyboardXibController);
+
 @end

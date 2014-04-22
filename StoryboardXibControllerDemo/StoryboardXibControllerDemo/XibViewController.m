@@ -8,7 +8,11 @@
 
 #import "XibViewController.h"
 
+#import "StoryboardXibController.h"
+
 @interface XibViewController ()
+
+@property (weak) StoryboardXibController *storyboardXibController;
 
 @end
 
@@ -25,9 +29,17 @@
 
 - (void)viewDidLoad
 {
+    if ( [self.parentViewController isKindOfClass:[StoryboardXibController class] ] )
+    {
+        self.storyboardXibController = (StoryboardXibController *)self.parentViewController;
+        self.storyboardXibController.containedControllerLoadedHandler = ^(StoryboardXibController *storyboardController)
+        {
+            self.confirmationLabel.text = [self.confirmationLabel.text stringByAppendingString:@"Storyboard Notified Me! "];
+        };
+    }
     [super viewDidLoad];
 
-    self.confirmationLabel.text = @"Xib Loaded!";
+    self.confirmationLabel.text = [self.confirmationLabel.text stringByAppendingString:@"Xib Loaded! "];
 }
 
 @end

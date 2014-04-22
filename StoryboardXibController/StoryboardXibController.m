@@ -113,6 +113,11 @@
                                                               attribute:NSLayoutAttributeRight
                                                              multiplier:1.0f
                                                                constant:0.0] ];
+        
+        if (self.containedControllerLoadedHandler)
+        {
+            self.containedControllerLoadedHandler(self);
+        }
 
     } else
     {
