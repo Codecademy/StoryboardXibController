@@ -17,8 +17,6 @@
 		3C55626D18DE22B300989DBE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C55626C18DE22B300989DBE /* XCTest.framework */; };
 		3C55626E18DE22B300989DBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C55625318DE22B300989DBE /* Foundation.framework */; };
 		3C55626F18DE22B300989DBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C55625718DE22B300989DBE /* UIKit.framework */; };
-		3C55627718DE22B300989DBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C55627518DE22B300989DBE /* InfoPlist.strings */; };
-		3C55627918DE22B300989DBE /* StoryboardXibControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C55627818DE22B300989DBE /* StoryboardXibControllerDemoTests.m */; };
 		3C55628518DE232400989DBE /* StoryboardXibController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C55628418DE232400989DBE /* StoryboardXibController.m */; };
 		3C55628618DE232400989DBE /* StoryboardXibController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C55628418DE232400989DBE /* StoryboardXibController.m */; };
 		3C55628818DE261400989DBE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C55628718DE261400989DBE /* Storyboard.storyboard */; };
@@ -56,9 +54,6 @@
 		3C55626518DE22B300989DBE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3C55626B18DE22B300989DBE /* StoryboardXibControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryboardXibControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C55626C18DE22B300989DBE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		3C55627418DE22B300989DBE /* StoryboardXibControllerDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StoryboardXibControllerDemoTests-Info.plist"; sourceTree = "<group>"; };
-		3C55627618DE22B300989DBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3C55627818DE22B300989DBE /* StoryboardXibControllerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryboardXibControllerDemoTests.m; sourceTree = "<group>"; };
 		3C55628318DE232400989DBE /* StoryboardXibController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardXibController.h; sourceTree = "<group>"; };
 		3C55628418DE232400989DBE /* StoryboardXibController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardXibController.m; sourceTree = "<group>"; };
 		3C55628718DE261400989DBE /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
@@ -102,7 +97,6 @@
 				3CF8DCDA18ED0C5200A8CA8A /* StoryboardXibController.podspec */,
 				3C55628218DE22F800989DBE /* StoryboardXibController */,
 				3C55625918DE22B300989DBE /* StoryboardXibControllerDemo */,
-				3C55627218DE22B300989DBE /* StoryboardXibControllerDemoTests */,
 				3C55625218DE22B300989DBE /* Frameworks */,
 				3C55625118DE22B300989DBE /* Products */,
 			);
@@ -150,24 +144,6 @@
 				3C55625C18DE22B300989DBE /* InfoPlist.strings */,
 				3C55625F18DE22B300989DBE /* main.m */,
 				3C55626118DE22B300989DBE /* StoryboardXibControllerDemo-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3C55627218DE22B300989DBE /* StoryboardXibControllerDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				3C55627818DE22B300989DBE /* StoryboardXibControllerDemoTests.m */,
-				3C55627318DE22B300989DBE /* Supporting Files */,
-			);
-			path = StoryboardXibControllerDemoTests;
-			sourceTree = "<group>";
-		};
-		3C55627318DE22B300989DBE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3C55627418DE22B300989DBE /* StoryboardXibControllerDemoTests-Info.plist */,
-				3C55627518DE22B300989DBE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -271,7 +247,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C55627718DE22B300989DBE /* InfoPlist.strings in Resources */,
 				3C55628C18DE265900989DBE /* View.xib in Resources */,
 				3C55628918DE261400989DBE /* Storyboard.storyboard in Resources */,
 			);
@@ -295,7 +270,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C55627918DE22B300989DBE /* StoryboardXibControllerDemoTests.m in Sources */,
 				3C55629018DE266800989DBE /* XibViewController.m in Sources */,
 				3C55628618DE232400989DBE /* StoryboardXibController.m in Sources */,
 			);
@@ -316,14 +290,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				3C55625D18DE22B300989DBE /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		3C55627518DE22B300989DBE /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3C55627618DE22B300989DBE /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
