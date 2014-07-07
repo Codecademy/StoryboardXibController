@@ -1,6 +1,10 @@
 StoryboardXibController
 ===
 
+[![Pod Version](http://img.shields.io/cocoapods/v/StoryboardXibController.svg?style=flat)](http://cocoadocs.org/docsets/StoryboardXibController/)
+[![Pod Platform](http://img.shields.io/cocoapods/p/StoryboardXibController.svg?style=flat)](http://cocoadocs.org/docsets/StoryboardXibController/)
+[![Pod License](http://img.shields.io/cocoapods/l/StoryboardXibController.svg?style=flat)](http://cocoadocs.org/docsets/StoryboardXibController/)
+
 **StoryboardXibController** is a utility class made to separate complex view controllers and view data out of your storyboard and into your Xibs, all within Xcode's Interface Builder.
 
 Using this class you can easily load an Xib from within a storyboard at runtime. Currently this is restricted to Xib files whose **File's Owner** is a `UIViewController` or `UIViewController` subclass.
