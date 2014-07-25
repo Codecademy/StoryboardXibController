@@ -13,7 +13,7 @@ Installation
   pod "StoryboardXibController"
 ```
 
-Alternatively you can clone the **[github repo](https://github.com/RyzacInc/StoryboardXibController)**.
+Alternatively you can clone the **[github repo](https://github.com/Codecademy/StoryboardXibController)**.
 
 Setup
 ---
