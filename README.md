@@ -30,6 +30,18 @@ Once you've installed the class:
 * Change the view controller's **Custom Class** from `UIViewController` to `StoryboardXibController`.
 
 ![Custom Class](https://github.com/Codecademy/StoryboardXibController/blob/master/README/Class.png?raw=true)
+
+**In Xcode 6:**
+
+* Find the **Screen Controller** property within the view controller's **Attributes Inspector** tab
+
+* Change the view controller's **Screen Controller** to the name of the class of your `Xib`'s **File's Owner**/main view controller.
+
+* Find the **Screen Nib** property immediately below
+
+* Change the view controller's **Screen Nib** property to the name of the `Xib` file you wish to load.
+
+**In Xcode 5 and below:**
  
 * Find the **User Defined Runtime Attributes** within the same **Identity Inspector** tab
 

@@ -10,8 +10,12 @@
 
 @interface StoryboardXibController : UIViewController
 
-@property (readwrite) NSString *screenControllerClass;
-@property (readwrite) NSString *screenNib;
+#ifndef IBInspectable
+#define IBInspectable
+#endif
+
+@property (readwrite) IBInspectable NSString *screenControllerClass;
+@property (readwrite) IBInspectable NSString *screenNib;
 
 @property (strong, readonly) UIViewController *containedController;
 
