@@ -114,6 +114,15 @@
                                                              multiplier:1.0f
                                                                constant:0.0] ];
         
+        if ( [self.containedController conformsToProtocol:@protocol(StoryboardXibContainedController) ] )
+        {
+            id<StoryboardXibContainedController> protocol = (id<StoryboardXibContainedController>)self.containedController;
+            if ( [protocol respondsToSelector:@selector(loadedBy:) ] )
+            {
+                [protocol loadedBy:self];
+            }
+        }
+        
         if (self.containedControllerLoadedHandler)
         {
             self.containedControllerLoadedHandler(self);
