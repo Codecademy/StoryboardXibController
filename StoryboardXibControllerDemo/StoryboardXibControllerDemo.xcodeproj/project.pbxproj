@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C0D62E41994020600F30D08 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0D62E31994020600F30D08 /* SecondView.xib */; };
 		3C55625418DE22B300989DBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C55625318DE22B300989DBE /* Foundation.framework */; };
 		3C55625618DE22B300989DBE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C55625518DE22B300989DBE /* CoreGraphics.framework */; };
 		3C55625818DE22B300989DBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C55625718DE22B300989DBE /* UIKit.framework */; };
@@ -21,8 +22,8 @@
 		3C55628618DE232400989DBE /* StoryboardXibController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C55628418DE232400989DBE /* StoryboardXibController.m */; };
 		3C55628818DE261400989DBE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C55628718DE261400989DBE /* Storyboard.storyboard */; };
 		3C55628918DE261400989DBE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C55628718DE261400989DBE /* Storyboard.storyboard */; };
-		3C55628B18DE265900989DBE /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C55628A18DE265900989DBE /* View.xib */; };
-		3C55628C18DE265900989DBE /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C55628A18DE265900989DBE /* View.xib */; };
+		3C55628B18DE265900989DBE /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C55628A18DE265900989DBE /* FirstView.xib */; };
+		3C55628C18DE265900989DBE /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C55628A18DE265900989DBE /* FirstView.xib */; };
 		3C55628F18DE266800989DBE /* XibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C55628E18DE266800989DBE /* XibViewController.m */; };
 		3C55629018DE266800989DBE /* XibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C55628E18DE266800989DBE /* XibViewController.m */; };
 		3CF8DCDB18ED0C5200A8CA8A /* StoryboardXibController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3CF8DCDA18ED0C5200A8CA8A /* StoryboardXibController.podspec */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C0D62E31994020600F30D08 /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
 		3C55625018DE22B300989DBE /* StoryboardXibControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardXibControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C55625318DE22B300989DBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3C55625518DE22B300989DBE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,7 +59,7 @@
 		3C55628318DE232400989DBE /* StoryboardXibController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardXibController.h; sourceTree = "<group>"; };
 		3C55628418DE232400989DBE /* StoryboardXibController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardXibController.m; sourceTree = "<group>"; };
 		3C55628718DE261400989DBE /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		3C55628A18DE265900989DBE /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		3C55628A18DE265900989DBE /* FirstView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstView.xib; sourceTree = "<group>"; };
 		3C55628D18DE266800989DBE /* XibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibViewController.h; sourceTree = "<group>"; };
 		3C55628E18DE266800989DBE /* XibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibViewController.m; sourceTree = "<group>"; };
 		3CF8DCDA18ED0C5200A8CA8A /* StoryboardXibController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = StoryboardXibController.podspec; path = ../StoryboardXibController.podspec; sourceTree = "<group>"; };
@@ -130,7 +132,8 @@
 				3C55626518DE22B300989DBE /* Images.xcassets */,
 				3C55625A18DE22B300989DBE /* Supporting Files */,
 				3C55628718DE261400989DBE /* Storyboard.storyboard */,
-				3C55628A18DE265900989DBE /* View.xib */,
+				3C55628A18DE265900989DBE /* FirstView.xib */,
+				3C0D62E31994020600F30D08 /* SecondView.xib */,
 				3C55628D18DE266800989DBE /* XibViewController.h */,
 				3C55628E18DE266800989DBE /* XibViewController.m */,
 			);
@@ -234,11 +237,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CF8DCDB18ED0C5200A8CA8A /* StoryboardXibController.podspec in Resources */,
-				3C55628B18DE265900989DBE /* View.xib in Resources */,
+				3C55628B18DE265900989DBE /* FirstView.xib in Resources */,
 				3C55625E18DE22B300989DBE /* InfoPlist.strings in Resources */,
 				3CF8DCDF18ED0C5800A8CA8A /* README.md in Resources */,
 				3C55626618DE22B300989DBE /* Images.xcassets in Resources */,
 				3CF8DCDE18ED0C5800A8CA8A /* LICENSE.md in Resources */,
+				3C0D62E41994020600F30D08 /* SecondView.xib in Resources */,
 				3C55628818DE261400989DBE /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,7 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C55628C18DE265900989DBE /* View.xib in Resources */,
+				3C55628C18DE265900989DBE /* FirstView.xib in Resources */,
 				3C55628918DE261400989DBE /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

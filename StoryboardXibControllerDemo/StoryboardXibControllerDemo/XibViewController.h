@@ -1,5 +1,5 @@
 //
-//  CustomViewController.h
+//  XibViewController.h
 //  StoryboardXibControllerDemo
 //
 //  Created by Ian on 3/22/14.
@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XibViewController : UIViewController
+#import "StoryboardXibController.h"
+
+@interface XibViewController : UIViewController<StoryboardXibContainedController>
 
 @property (readwrite, weak) IBOutlet UILabel *confirmationLabel;
 

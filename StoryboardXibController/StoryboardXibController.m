@@ -12,6 +12,9 @@
 
 @property (strong, readwrite) NSTimer *containedViewDidLoadCheck; //HACK
 
+@property (strong, readwrite) UIStoryboardSegue *segue;
+@property (strong, readwrite) id segueSender;
+
 @end
 
 @implementation StoryboardXibController
@@ -142,9 +145,16 @@
         if ( [self.containedController conformsToProtocol:@protocol(StoryboardXibContainedController) ] )
         {
             id<StoryboardXibContainedController> protocol = (id<StoryboardXibContainedController>)self.containedController;
-            if ( [protocol respondsToSelector:@selector(loadedBy:) ] )
+            if ( [protocol respondsToSelector:@selector(storyboardXibLoadedBy:) ] )
             {
-                [protocol loadedBy:self];
+                [protocol storyboardXibLoadedBy:self];
+            }
+            
+            if ( [protocol respondsToSelector:@selector(storyboardXibWithin:passedSender:inSegue:) ] && self.segue && self.segueSender )
+            {
+                [protocol storyboardXibWithin:self passedSender:self.segueSender inSegue:self.segue];
+                self.segueSender = nil;
+                self.segue = nil;
             }
         }
         
@@ -166,6 +176,16 @@
     }
     
     return self.containedController.isViewLoaded;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ( [segue.destinationViewController isKindOfClass:[StoryboardXibController class] ] )
+    {
+        StoryboardXibController *destinationController = segue.destinationViewController;
+        destinationController.segue = segue;
+        destinationController.segueSender = sender;
+    }
 }
 
 @end

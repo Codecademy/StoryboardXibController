@@ -22,11 +22,13 @@
 
 @property (strong, readwrite) void (^containedControllerLoadedHandler)(StoryboardXibController *storyboardXibController);
 
+
 @end
 
 @protocol StoryboardXibContainedController <NSObject>
 
 @optional
-- (void)loadedBy:(StoryboardXibController *)storyboardXibController;
+- (void)storyboardXibLoadedBy:(StoryboardXibController *)storyboardXibController;
+- (void)storyboardXibWithin:(StoryboardXibController *)storyboardXibController passedSender:(id)sender inSegue:(UIStoryboardSegue *)segue;
 
 @end
