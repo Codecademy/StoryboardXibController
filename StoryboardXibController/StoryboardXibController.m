@@ -41,10 +41,35 @@
         screenControllerClass = NSClassFromString(self.screenControllerClass);
     }
     
+    NSBundle *fromBundle;
+    if (self.nibBundleName)
+    {
+        NSString *nibBundlePath = [NSString stringWithFormat:@"Frameworks/%@", self.nibBundleName];
+        
+        NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:nibBundlePath withExtension:@"framework"];
+        if (bundleURL)
+        {
+            fromBundle = [NSBundle bundleWithURL:bundleURL];
+        } else
+        {
+            NSString *error = [NSString stringWithFormat:@"Unable to find bundle with the name %@", self.nibBundleName];
+#ifdef NSLogError
+            NSLogError(@"%@", error);
+#else
+            NSLog(@"Error: %@", error);
+#endif
+        }
+    }
+    
+    if (!fromBundle)
+    {
+        fromBundle = [NSBundle mainBundle];
+    }
+    
     // TODO: report invalid class or nib file not found, each explicitly
     if ( [screenControllerClass isSubclassOfClass:[UIViewController class] ] && self.screenNib)
     {
-        _containedController = [ [screenControllerClass alloc] initWithNibName:self.screenNib bundle:[NSBundle mainBundle] ];
+        _containedController = [ [screenControllerClass alloc] initWithNibName:self.screenNib bundle:fromBundle];
         [self addChildViewController:self.containedController];
 
         // yes, getters should not be used for side effects UIKit, but why you gotta only start loading when I do??

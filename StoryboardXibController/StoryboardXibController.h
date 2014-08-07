@@ -16,6 +16,7 @@
 
 @property (readwrite) IBInspectable NSString *screenControllerClass;
 @property (readwrite) IBInspectable NSString *screenNib;
+@property (readwrite) IBInspectable NSString *nibBundleName;
 
 @property (strong, readonly) UIViewController *containedController;
 
