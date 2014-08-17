@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StoryboardXibController : UIViewController
+#import <SegueingInfo/SegueingInfo.h>
+
+@interface StoryboardXibController : UIViewController<SegueingInfoViewController>
 
 #ifndef IBInspectable
 #define IBInspectable
@@ -25,10 +27,9 @@
 
 @end
 
-@protocol StoryboardXibContainedController <NSObject>
+@protocol StoryboardXibContainedController <SegueingInfoViewController>
 
 @optional
 - (void)storyboardXibLoadedBy:(StoryboardXibController *)storyboardXibController;
-- (void)storyboardXibWithin:(StoryboardXibController *)storyboardXibController passedSender:(id)sender inSegue:(UIStoryboardSegue *)segue;
 
 @end

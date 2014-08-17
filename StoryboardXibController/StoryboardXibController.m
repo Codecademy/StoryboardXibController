@@ -13,11 +13,21 @@
 @property (strong, readwrite) NSTimer *containedViewDidLoadCheck; //HACK
 
 @property (strong, readwrite) UIStoryboardSegue *segue;
-@property (strong, readwrite) id segueSender;
+@property (strong, readwrite) id segueInfo;
 
 @end
 
 @implementation StoryboardXibController
+
+- (void)destinationPrepareForSegue:(UIStoryboardSegue *)segue info:(id)info
+{
+    if ( [segue.destinationViewController isKindOfClass:[StoryboardXibController class] ] )
+    {
+        StoryboardXibController *destinationController = segue.destinationViewController;
+        destinationController.segue = segue;
+        destinationController.segueInfo = info;
+    }
+}
 
 @synthesize containedController = _containedController;
 
@@ -150,12 +160,12 @@
                 [protocol storyboardXibLoadedBy:self];
             }
             
-            if ( [protocol respondsToSelector:@selector(storyboardXibWithin:passedSender:inSegue:) ] && self.segue && self.segueSender )
+            if ( [protocol respondsToSelector:@selector(destinationPrepareForSegue:info:) ] && self.segue && self.segueInfo )
             {
-                [protocol storyboardXibWithin:self passedSender:self.segueSender inSegue:self.segue];
-                self.segueSender = nil;
-                self.segue = nil;
+                [protocol destinationPrepareForSegue:self.segue info:self.segueInfo];
             }
+            self.segue = nil;
+            self.segueInfo = nil;
         }
         
         if (self.containedControllerLoadedHandler)
@@ -180,12 +190,9 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ( [segue.destinationViewController isKindOfClass:[StoryboardXibController class] ] )
-    {
-        StoryboardXibController *destinationController = segue.destinationViewController;
-        destinationController.segue = segue;
-        destinationController.segueSender = sender;
-    }
+    [super prepareForSegue:segue sender:sender];
+    
+    [self destinationPrepareForSegue:segue info:sender];
 }
 
 @end

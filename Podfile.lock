@@ -1,0 +1,17 @@
+PODS:
+  - SegueingInfo (1.0.0)
+  - StoryboardXibController (1.5):
+    - SegueingInfo
+
+DEPENDENCIES:
+  - StoryboardXibController (from `.`)
+
+EXTERNAL SOURCES:
+  StoryboardXibController:
+    :path: .
+
+SPEC CHECKSUMS:
+  SegueingInfo: 674b86e23d6db7f005e146919fef0e3078f70efb
+  StoryboardXibController: d054984c6e236336ac805f92be2a07beccd61f51
+
+COCOAPODS: 0.33.1
