@@ -3,4 +3,4 @@ xcode_workspace: StoryboardXibControllerDemo/StoryboardXibControllerDemo.xcworks
 xcode_scheme: StoryboardXibControllerDemo
 before_install: gem install cocoapods
 xcode_sdk: iphonesimulator
-script: xctool -project StoryboardXibControllerDemo.xcworkspace -scheme StoryboardXibControllerDemo -sdk iphonesimulator build
+script: xctool -workspace StoryboardXibControllerDemo.xcworkspace -scheme StoryboardXibControllerDemo -sdk iphonesimulator build
