@@ -4,7 +4,7 @@ xcodeproj 'StoryboardXibControllerDemo/StoryboardXibControllerDemo.xcodeproj/'
 # platform :ios, "6.0"
 
 target "StoryboardXibControllerDemo" do
-  pod 'StoryboardXibController', :path => '.'
+  pod 'StoryboardXibController', :path => './'
 end
 
 target "StoryboardXibControllerDemoTests" do
