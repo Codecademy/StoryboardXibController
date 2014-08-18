@@ -50,9 +50,9 @@
     };
 }
 
-- (void)storyboardXibWithin:(StoryboardXibController *)storyboardXibController passedSender:(id)sender inSegue:(UIStoryboardSegue *)segue
+- (void)destinationPrepareForSegue:(UIStoryboardSegue *)segue info:(id)info
 {
-    self.confirmationLabel.text = [self.confirmationLabel.text stringByAppendingString:[NSString stringWithFormat:@"\nPrevious view sent me:\n \"%@\"!", sender] ];
+    self.confirmationLabel.text = [self.confirmationLabel.text stringByAppendingString:[NSString stringWithFormat:@"\nPrevious view sent me:\n \"%@\"!", info] ];
     [self.confirmationLabel sizeToFit];
 }
 

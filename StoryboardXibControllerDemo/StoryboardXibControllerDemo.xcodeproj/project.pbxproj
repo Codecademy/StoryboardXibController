@@ -18,7 +18,6 @@
 		3C55626D18DE22B300989DBE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C55626C18DE22B300989DBE /* XCTest.framework */; };
 		3C55626E18DE22B300989DBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C55625318DE22B300989DBE /* Foundation.framework */; };
 		3C55626F18DE22B300989DBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C55625718DE22B300989DBE /* UIKit.framework */; };
-		3C55628518DE232400989DBE /* StoryboardXibController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C55628418DE232400989DBE /* StoryboardXibController.m */; };
 		3C55628618DE232400989DBE /* StoryboardXibController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C55628418DE232400989DBE /* StoryboardXibController.m */; };
 		3C55628818DE261400989DBE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C55628718DE261400989DBE /* Storyboard.storyboard */; };
 		3C55628918DE261400989DBE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C55628718DE261400989DBE /* Storyboard.storyboard */; };
@@ -306,7 +305,6 @@
 			files = (
 				3C55626418DE22B300989DBE /* AppDelegate.m in Sources */,
 				3C55626018DE22B300989DBE /* main.m in Sources */,
-				3C55628518DE232400989DBE /* StoryboardXibController.m in Sources */,
 				3C55628F18DE266800989DBE /* XibViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

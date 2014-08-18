@@ -24,7 +24,6 @@
 
 @property (strong, readwrite) void (^containedControllerLoadedHandler)(StoryboardXibController *storyboardXibController);
 
-
 @end
 
 @protocol StoryboardXibContainedController <SegueingInfoViewController>
