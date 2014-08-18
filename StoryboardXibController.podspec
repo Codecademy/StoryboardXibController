@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'StoryboardXibController'
-  s.version      = '1.5'
+  s.version      = '1.5.1'
   s.license      = 'MIT'
   s.homepage     = 'https://github.com/Codecademy/StoryboardXibController'
   s.authors      =  { 'Ian Grossberg / Codecademy' => 'yo.ian.g@gmail.com' }
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 
 # Source Info
   s.platform     =  :ios, '6.0'
-  s.source       =  { :git => 'https://github.com/Codecademy/StoryboardXibController.git', :tag => '1.5' }
+  s.source       =  { :git => 'https://github.com/Codecademy/StoryboardXibController.git', :tag => '1.5.1' }
   s.source_files = 'StoryboardXibController/*'
 
   s.requires_arc = true
