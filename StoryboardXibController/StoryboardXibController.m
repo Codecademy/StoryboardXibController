@@ -159,15 +159,20 @@
             {
                 [protocol storyboardXibLoadedBy:self];
             }
-            
-            if ( [protocol respondsToSelector:@selector(destinationPrepareForSegue:info:) ] && self.segue && self.segueInfo )
+        }
+        
+        if (self.segueInfo != nil && [self.containedController conformsToProtocol:@protocol(SegueingInfoViewController) ] )
+        {
+            id<SegueingInfoViewController> protocol = (id<SegueingInfoViewController>)self.containedController;
+            if ( [protocol respondsToSelector:@selector(destinationPrepareForSegue:info:) ] )
             {
                 [protocol destinationPrepareForSegue:self.segue info:self.segueInfo];
             }
-            self.segue = nil;
-            self.segueInfo = nil;
         }
-        
+
+        self.segue = nil;
+        self.segueInfo = nil;
+
         if (self.containedControllerLoadedHandler)
         {
             self.containedControllerLoadedHandler(self);
