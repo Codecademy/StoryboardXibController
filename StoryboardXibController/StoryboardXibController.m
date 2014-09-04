@@ -195,4 +195,32 @@
     [self destinationPrepareForSegue:segue info:sender];
 }
 
+- (BOOL)conformsToProtocol:(Protocol *)aProtocol;
+{
+    BOOL result = [super conformsToProtocol:aProtocol];
+    if (!result)
+    {
+        result = [self.containedController conformsToProtocol:aProtocol];
+    }
+    return result;
+}
+
+- (BOOL)respondsToSelector:(SEL)aSelector
+{
+    BOOL result = [super respondsToSelector:aSelector];
+    if (!result)
+    {
+        result = [self.containedController respondsToSelector:aSelector];
+    }
+    return result;
+}
+
+- (void)forwardInvocation:(NSInvocation *)anInvocation
+{
+    if ( [self.containedController respondsToSelector:anInvocation.selector] )
+    {
+        [anInvocation invokeWithTarget:self.containedController];
+    }
+}
+
 @end
