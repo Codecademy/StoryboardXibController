@@ -10,7 +10,7 @@
 
 #import <SegueingInfo/SegueingInfo.h>
 
-@interface StoryboardXibController : UIViewController<SegueingInfoViewController>
+@interface StoryboardXibController : SegueingInfoViewController<SegueingInfoViewController>
 
 #ifndef IBInspectable
 #define IBInspectable
