@@ -18,6 +18,11 @@
 
 @interface XibViewController : UIViewController<StoryboardXibContainedController, XibViewController>
 
-@property (readwrite, weak) IBOutlet UILabel *confirmationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *xibLoaded;
+@property (weak, nonatomic) IBOutlet UILabel *loadedHandler;
+@property (weak, nonatomic) IBOutlet UILabel *segueInfo;
+@property (weak, nonatomic) IBOutlet UILabel *forwardConformsToProtocol;
+@property (weak, nonatomic) IBOutlet UILabel *forwardRespondsToSelector;
+@property (weak, nonatomic) IBOutlet UILabel *forwardSelectorResult;
 
 @end

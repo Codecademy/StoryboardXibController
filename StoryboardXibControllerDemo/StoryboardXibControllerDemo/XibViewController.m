@@ -31,13 +31,12 @@
 {
     [super viewDidLoad];
 
-    [self appendText:@"\nXib Loaded!"];
-    [self.confirmationLabel sizeToFit];
+    self.xibLoaded.text = @"YES";
 }
 
 - (IBAction)segueThroughParentWithSenderText:(id)sender
 {
-    [self.storyboardXibController performSegueWithIdentifier:@"Second" sender:@"Psst, pass this on to the second view!"];
+    [self.storyboardXibController performSegueWithIdentifier:@"Second" sender:@"YES"];
 }
 
 - (void)storyboardXibLoadedBy:(StoryboardXibController *)storyboardXibController
@@ -45,7 +44,7 @@
     self.storyboardXibController = storyboardXibController;
     self.storyboardXibController.containedControllerLoadedHandler = ^(StoryboardXibController *storyboardController)
     {
-        [self appendText:@"\nStoryboard Notified Me!"];
+        self.loadedHandler.text = @"YES";
     };
 }
 
@@ -53,20 +52,15 @@
 {
     if ( [object conformsToProtocol:@protocol(XibViewController) ] )
     {
-        [self appendText:@"\nSource forwards Protocol!"];
+        self.forwardConformsToProtocol.text = @"YES";
+        
         id<XibViewController> protocol = object;
         if ( [protocol respondsToSelector:@selector(askMe) ] )
         {
-            [self appendText:@"\nSource forwards Selector!"];
+            self.forwardRespondsToSelector.text = @"YES";
             
-            [self appendText:[NSString stringWithFormat:@"\nSource forwarded: %@!", [protocol askMe] ] ];
-        } else
-        {
-            [self appendText:@"\nSource does not forward Selector!"];
+            self.forwardSelectorResult.text = [protocol askMe];
         }
-    } else
-    {
-        [self appendText:@"\n**Error** Source does not forward Protocol!"];
     }
 }
 
@@ -74,18 +68,12 @@
 {
     [self testForwardingFrom:segue.sourceViewController];
     
-    [self appendText:[NSString stringWithFormat:@"\nPrevious view sent me:\n \"%@\"!", info] ];
-}
-
-- (void)appendText:(NSString *)text
-{
-    self.confirmationLabel.text = [self.confirmationLabel.text stringByAppendingString:text];
-    [self.confirmationLabel sizeToFit];
+    self.segueInfo.text = [NSString stringWithFormat:@"%@", info];
 }
 
 - (NSString *)askMe
 {
-    return @"Let me tell you";
+    return @"YES";
 }
 
 @end

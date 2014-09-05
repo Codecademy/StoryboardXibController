@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6185.11" systemVersion="14A314h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XibViewController">
             <connections>
-                <outlet property="confirmationLabel" destination="62h-J3-UDF" id="Qvr-AL-Win"/>
+                <outlet property="loadedHandler" destination="FIu-cY-0OE" id="5In-ED-a3k"/>
                 <outlet property="view" destination="iN0-l3-epB" id="GnU-XR-aB7"/>
+                <outlet property="xibLoaded" destination="LX6-We-qeB" id="Uax-1o-wTZ"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -15,14 +16,8 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xib Loaded?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="62h-J3-UDF">
-                    <rect key="frame" x="20" y="224" width="280" height="33"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezZ-mj-PpG">
-                    <rect key="frame" x="40" y="307" width="241" height="30"/>
+                    <rect key="frame" x="40" y="430" width="241" height="30"/>
                     <state key="normal" title="Segue through parent with this text">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -30,15 +25,67 @@
                         <action selector="segueThroughParentWithSenderText:" destination="-1" eventType="touchUpInside" id="q59-dT-wuh"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sU1-EP-bAg" userLabel="Xib Loaded">
+                    <rect key="frame" x="101" y="20" width="118" height="21"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XIB Loaded:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSN-Xd-1CG">
+                            <rect key="frame" x="0.0" y="0.0" width="95" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LX6-We-qeB">
+                            <rect key="frame" x="95" y="0.0" width="23" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="SSN-Xd-1CG" firstAttribute="top" secondItem="sU1-EP-bAg" secondAttribute="top" id="0eV-kd-HaL"/>
+                        <constraint firstItem="LX6-We-qeB" firstAttribute="leading" secondItem="SSN-Xd-1CG" secondAttribute="trailing" id="1oK-6D-ddU"/>
+                        <constraint firstItem="SSN-Xd-1CG" firstAttribute="leading" secondItem="sU1-EP-bAg" secondAttribute="leading" id="FlG-FZ-1FO"/>
+                        <constraint firstAttribute="trailing" secondItem="LX6-We-qeB" secondAttribute="trailing" id="b5E-cu-g4f"/>
+                        <constraint firstAttribute="bottom" secondItem="SSN-Xd-1CG" secondAttribute="bottom" id="r96-zU-Lz2"/>
+                        <constraint firstItem="LX6-We-qeB" firstAttribute="centerY" secondItem="SSN-Xd-1CG" secondAttribute="centerY" id="ywS-y7-OWt"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpT-yY-m4w" userLabel="Loading Handler">
+                    <rect key="frame" x="83" y="51" width="155" height="21"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Handler:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmF-ue-Jb8">
+                            <rect key="frame" x="0.0" y="0.0" width="132" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIu-cY-0OE">
+                            <rect key="frame" x="132" y="0.0" width="23" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="FIu-cY-0OE" firstAttribute="leading" secondItem="rmF-ue-Jb8" secondAttribute="trailing" id="4Dy-7H-awx"/>
+                        <constraint firstItem="rmF-ue-Jb8" firstAttribute="leading" secondItem="fpT-yY-m4w" secondAttribute="leading" id="Ofb-Zc-s7a"/>
+                        <constraint firstAttribute="bottom" secondItem="rmF-ue-Jb8" secondAttribute="bottom" id="ame-id-AmC"/>
+                        <constraint firstItem="FIu-cY-0OE" firstAttribute="centerY" secondItem="rmF-ue-Jb8" secondAttribute="centerY" id="gZF-Xu-9gS"/>
+                        <constraint firstItem="rmF-ue-Jb8" firstAttribute="top" secondItem="fpT-yY-m4w" secondAttribute="top" id="hCE-0h-BGB"/>
+                        <constraint firstAttribute="trailing" secondItem="FIu-cY-0OE" secondAttribute="trailing" id="pfY-WH-NMa"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="centerY" secondItem="62h-J3-UDF" secondAttribute="centerY" id="7Ma-Uv-guX"/>
-                <constraint firstAttribute="centerX" secondItem="62h-J3-UDF" secondAttribute="centerX" id="Al1-5s-MLr"/>
-                <constraint firstAttribute="trailing" secondItem="62h-J3-UDF" secondAttribute="trailing" constant="20" id="BkF-PJ-Yl5"/>
                 <constraint firstAttribute="centerX" secondItem="ezZ-mj-PpG" secondAttribute="centerX" id="Ji3-nl-9qA"/>
-                <constraint firstItem="ezZ-mj-PpG" firstAttribute="top" secondItem="62h-J3-UDF" secondAttribute="bottom" constant="50" id="ss0-ck-saZ"/>
-                <constraint firstItem="62h-J3-UDF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="win-pA-cAB"/>
+                <constraint firstAttribute="centerX" secondItem="fpT-yY-m4w" secondAttribute="centerX" id="QST-G3-wXL"/>
+                <constraint firstItem="sU1-EP-bAg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Wka-7M-XwJ"/>
+                <constraint firstItem="fpT-yY-m4w" firstAttribute="top" secondItem="sU1-EP-bAg" secondAttribute="bottom" constant="10" id="Zuz-Gy-NQn"/>
+                <constraint firstAttribute="centerX" secondItem="sU1-EP-bAg" secondAttribute="centerX" id="iXs-Px-guk"/>
+                <constraint firstAttribute="bottom" secondItem="ezZ-mj-PpG" secondAttribute="bottom" constant="20" id="w2a-GO-id9"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
