@@ -222,10 +222,24 @@
 
 - (void)forwardInvocation:(NSInvocation *)anInvocation
 {
+    // here we default to the contained controller because forwardInvocation: is only called when we can't respond ourselves
     if ( [self.containedController respondsToSelector:anInvocation.selector] )
     {
         [anInvocation invokeWithTarget:self.containedController];
+    } else
+    {
+        [super forwardInvocation:anInvocation];
     }
+}
+
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)selector
+{
+    NSMethodSignature* signature = [super methodSignatureForSelector:selector];
+    if (!signature && [self.containedController respondsToSelector:selector] )
+    {
+        signature = [self.containedController methodSignatureForSelector:selector];
+    }
+    return signature;
 }
 
 @end
