@@ -1,6 +1,6 @@
 language: objective-c
 xcode_workspace: StoryboardXibControllerDemo/StoryboardXibControllerDemo.xcworkspace
 xcode_scheme: StoryboardXibControllerDemo
-before_install: gem install cocoapods
+before_install: rm Podfile.lock
 xcode_sdk: iphonesimulator
 script: xctool -workspace StoryboardXibControllerDemo.xcworkspace -scheme StoryboardXibControllerDemo -sdk iphonesimulator build
