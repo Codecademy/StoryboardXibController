@@ -10,7 +10,13 @@
 
 #import "StoryboardXibController.h"
 
-@interface XibViewController : UIViewController<StoryboardXibContainedController>
+@protocol XibViewController <NSObject>
+
+- (NSString *)askMe;
+
+@end
+
+@interface XibViewController : UIViewController<StoryboardXibContainedController, XibViewController>
 
 @property (readwrite, weak) IBOutlet UILabel *confirmationLabel;
 

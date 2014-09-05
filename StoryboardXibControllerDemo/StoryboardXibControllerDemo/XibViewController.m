@@ -49,8 +49,31 @@
     };
 }
 
+- (void)testForwardingFrom:(id)object
+{
+    if ( [object conformsToProtocol:@protocol(XibViewController) ] )
+    {
+        [self appendText:@"\nSource forwards Protocol!"];
+        id<XibViewController> protocol = object;
+        if ( [protocol respondsToSelector:@selector(askMe) ] )
+        {
+            [self appendText:@"\nSource forwards Selector!"];
+            
+            [self appendText:[NSString stringWithFormat:@"\nSource forwarded: %@!", [protocol askMe] ] ];
+        } else
+        {
+            [self appendText:@"\nSource does not forward Selector!"];
+        }
+    } else
+    {
+        [self appendText:@"\n**Error** Source does not forward Protocol!"];
+    }
+}
+
 - (void)destinationPrepareForSegue:(UIStoryboardSegue *)segue info:(id)info
 {
+    [self testForwardingFrom:segue.sourceViewController];
+    
     [self appendText:[NSString stringWithFormat:@"\nPrevious view sent me:\n \"%@\"!", info] ];
 }
 
@@ -58,6 +81,11 @@
 {
     self.confirmationLabel.text = [self.confirmationLabel.text stringByAppendingString:text];
     [self.confirmationLabel sizeToFit];
+}
+
+- (NSString *)askMe
+{
+    return @"Let me tell you";
 }
 
 @end
