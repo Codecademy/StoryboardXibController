@@ -31,7 +31,7 @@
 {
     [super viewDidLoad];
 
-    self.confirmationLabel.text = [self.confirmationLabel.text stringByAppendingString:@"\nXib Loaded!"];
+    [self appendText:@"\nXib Loaded!"];
     [self.confirmationLabel sizeToFit];
 }
 
@@ -45,14 +45,18 @@
     self.storyboardXibController = storyboardXibController;
     self.storyboardXibController.containedControllerLoadedHandler = ^(StoryboardXibController *storyboardController)
     {
-        self.confirmationLabel.text = [self.confirmationLabel.text stringByAppendingString:@"\nStoryboard Notified Me!"];
-        [self.confirmationLabel sizeToFit];
+        [self appendText:@"\nStoryboard Notified Me!"];
     };
 }
 
 - (void)destinationPrepareForSegue:(UIStoryboardSegue *)segue info:(id)info
 {
-    self.confirmationLabel.text = [self.confirmationLabel.text stringByAppendingString:[NSString stringWithFormat:@"\nPrevious view sent me:\n \"%@\"!", info] ];
+    [self appendText:[NSString stringWithFormat:@"\nPrevious view sent me:\n \"%@\"!", info] ];
+}
+
+- (void)appendText:(NSString *)text
+{
+    self.confirmationLabel.text = [self.confirmationLabel.text stringByAppendingString:text];
     [self.confirmationLabel sizeToFit];
 }
 
