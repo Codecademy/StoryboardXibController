@@ -15,34 +15,16 @@
 		3C55626018DE22B300989DBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C55625F18DE22B300989DBE /* main.m */; };
 		3C55626418DE22B300989DBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C55626318DE22B300989DBE /* AppDelegate.m */; };
 		3C55626618DE22B300989DBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C55626518DE22B300989DBE /* Images.xcassets */; };
-		3C55626D18DE22B300989DBE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C55626C18DE22B300989DBE /* XCTest.framework */; };
-		3C55626E18DE22B300989DBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C55625318DE22B300989DBE /* Foundation.framework */; };
-		3C55626F18DE22B300989DBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C55625718DE22B300989DBE /* UIKit.framework */; };
-		3C55628618DE232400989DBE /* StoryboardXibController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C55628418DE232400989DBE /* StoryboardXibController.m */; };
 		3C55628818DE261400989DBE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C55628718DE261400989DBE /* Storyboard.storyboard */; };
-		3C55628918DE261400989DBE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C55628718DE261400989DBE /* Storyboard.storyboard */; };
 		3C55628B18DE265900989DBE /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C55628A18DE265900989DBE /* FirstView.xib */; };
-		3C55628C18DE265900989DBE /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C55628A18DE265900989DBE /* FirstView.xib */; };
 		3C55628F18DE266800989DBE /* XibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C55628E18DE266800989DBE /* XibViewController.m */; };
-		3C55629018DE266800989DBE /* XibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C55628E18DE266800989DBE /* XibViewController.m */; };
 		3CF8DCDB18ED0C5200A8CA8A /* StoryboardXibController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3CF8DCDA18ED0C5200A8CA8A /* StoryboardXibController.podspec */; };
 		3CF8DCDE18ED0C5800A8CA8A /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 3CF8DCDC18ED0C5800A8CA8A /* LICENSE.md */; };
 		3CF8DCDF18ED0C5800A8CA8A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3CF8DCDD18ED0C5800A8CA8A /* README.md */; };
 		D3D8D1C5EC764455A89BEBD2 /* libPods-StoryboardXibControllerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB130B7DA5BD4560BDC65135 /* libPods-StoryboardXibControllerDemo.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		3C55627018DE22B300989DBE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3C55624818DE22B300989DBE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3C55624F18DE22B300989DBE;
-			remoteInfo = StoryboardXibControllerDemo;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		2BFF82994ECF48928C2AFE01 /* Pods-StoryboardXibControllerDemo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoryboardXibControllerDemo.xcconfig"; path = "../Pods/Pods-StoryboardXibControllerDemo.xcconfig"; sourceTree = "<group>"; };
 		3C0D62E31994020600F30D08 /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
 		3C55625018DE22B300989DBE /* StoryboardXibControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardXibControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C55625318DE22B300989DBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -55,7 +37,6 @@
 		3C55626218DE22B300989DBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3C55626318DE22B300989DBE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3C55626518DE22B300989DBE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3C55626B18DE22B300989DBE /* StoryboardXibControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryboardXibControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C55626C18DE22B300989DBE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3C55628318DE232400989DBE /* StoryboardXibController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardXibController.h; sourceTree = "<group>"; };
 		3C55628418DE232400989DBE /* StoryboardXibController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardXibController.m; sourceTree = "<group>"; };
@@ -63,9 +44,12 @@
 		3C55628A18DE265900989DBE /* FirstView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstView.xib; sourceTree = "<group>"; };
 		3C55628D18DE266800989DBE /* XibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibViewController.h; sourceTree = "<group>"; };
 		3C55628E18DE266800989DBE /* XibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibViewController.m; sourceTree = "<group>"; };
+		3C5B9745B9C725AA27E7FE71 /* Pods-StoryboardXibControllerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoryboardXibControllerDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-StoryboardXibControllerDemo/Pods-StoryboardXibControllerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3C5EBDCF1A08341B0025191A /* ThirdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdView.xib; sourceTree = "<group>"; };
 		3CF8DCDA18ED0C5200A8CA8A /* StoryboardXibController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = StoryboardXibController.podspec; path = ../StoryboardXibController.podspec; sourceTree = "<group>"; };
 		3CF8DCDC18ED0C5800A8CA8A /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE.md; path = ../LICENSE.md; sourceTree = "<group>"; };
 		3CF8DCDD18ED0C5800A8CA8A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9C1174EA91A25D0E8239117F /* Pods-StoryboardXibControllerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoryboardXibControllerDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-StoryboardXibControllerDemo/Pods-StoryboardXibControllerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		BB130B7DA5BD4560BDC65135 /* libPods-StoryboardXibControllerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StoryboardXibControllerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -81,19 +65,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3C55626818DE22B300989DBE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3C55626D18DE22B300989DBE /* XCTest.framework in Frameworks */,
-				3C55626F18DE22B300989DBE /* UIKit.framework in Frameworks */,
-				3C55626E18DE22B300989DBE /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39C216B9F2055634006EDFAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C5B9745B9C725AA27E7FE71 /* Pods-StoryboardXibControllerDemo.debug.xcconfig */,
+				9C1174EA91A25D0E8239117F /* Pods-StoryboardXibControllerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3C55624718DE22B300989DBE = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +87,7 @@
 				3C55625918DE22B300989DBE /* StoryboardXibControllerDemo */,
 				3C55625218DE22B300989DBE /* Frameworks */,
 				3C55625118DE22B300989DBE /* Products */,
-				2BFF82994ECF48928C2AFE01 /* Pods-StoryboardXibControllerDemo.xcconfig */,
+				39C216B9F2055634006EDFAC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				3C55625018DE22B300989DBE /* StoryboardXibControllerDemo.app */,
-				3C55626B18DE22B300989DBE /* StoryboardXibControllerDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,24 +170,6 @@
 			productReference = 3C55625018DE22B300989DBE /* StoryboardXibControllerDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3C55626A18DE22B300989DBE /* StoryboardXibControllerDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3C55627F18DE22B300989DBE /* Build configuration list for PBXNativeTarget "StoryboardXibControllerDemoTests" */;
-			buildPhases = (
-				3C55626718DE22B300989DBE /* Sources */,
-				3C55626818DE22B300989DBE /* Frameworks */,
-				3C55626918DE22B300989DBE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3C55627118DE22B300989DBE /* PBXTargetDependency */,
-			);
-			name = StoryboardXibControllerDemoTests;
-			productName = StoryboardXibControllerDemoTests;
-			productReference = 3C55626B18DE22B300989DBE /* StoryboardXibControllerDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -214,11 +178,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Codecademy;
-				TargetAttributes = {
-					3C55626A18DE22B300989DBE = {
-						TestTargetID = 3C55624F18DE22B300989DBE;
-					};
-				};
 			};
 			buildConfigurationList = 3C55624B18DE22B300989DBE /* Build configuration list for PBXProject "StoryboardXibControllerDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -233,7 +192,6 @@
 			projectRoot = "";
 			targets = (
 				3C55624F18DE22B300989DBE /* StoryboardXibControllerDemo */,
-				3C55626A18DE22B300989DBE /* StoryboardXibControllerDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -251,15 +209,6 @@
 				3CF8DCDE18ED0C5800A8CA8A /* LICENSE.md in Resources */,
 				3C0D62E41994020600F30D08 /* SecondView.xib in Resources */,
 				3C55628818DE261400989DBE /* Storyboard.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3C55626918DE22B300989DBE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3C55628C18DE265900989DBE /* FirstView.xib in Resources */,
-				3C55628918DE261400989DBE /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +242,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Pods-StoryboardXibControllerDemo-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-StoryboardXibControllerDemo/Pods-StoryboardXibControllerDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -309,24 +258,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3C55626718DE22B300989DBE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3C55629018DE266800989DBE /* XibViewController.m in Sources */,
-				3C55628618DE232400989DBE /* StoryboardXibController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3C55627118DE22B300989DBE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3C55624F18DE22B300989DBE /* StoryboardXibControllerDemo */;
-			targetProxy = 3C55627018DE22B300989DBE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3C55625C18DE22B300989DBE /* InfoPlist.strings */ = {
@@ -414,7 +346,7 @@
 		};
 		3C55627D18DE22B300989DBE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BFF82994ECF48928C2AFE01 /* Pods-StoryboardXibControllerDemo.xcconfig */;
+			baseConfigurationReference = 3C5B9745B9C725AA27E7FE71 /* Pods-StoryboardXibControllerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -429,7 +361,7 @@
 		};
 		3C55627E18DE22B300989DBE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BFF82994ECF48928C2AFE01 /* Pods-StoryboardXibControllerDemo.xcconfig */;
+			baseConfigurationReference = 9C1174EA91A25D0E8239117F /* Pods-StoryboardXibControllerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -439,46 +371,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		3C55628018DE22B300989DBE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StoryboardXibControllerDemo.app/StoryboardXibControllerDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "StoryboardXibControllerDemo/StoryboardXibControllerDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "StoryboardXibControllerDemoTests/StoryboardXibControllerDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		3C55628118DE22B300989DBE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StoryboardXibControllerDemo.app/StoryboardXibControllerDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "StoryboardXibControllerDemo/StoryboardXibControllerDemo-Prefix.pch";
-				INFOPLIST_FILE = "StoryboardXibControllerDemoTests/StoryboardXibControllerDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -499,15 +391,6 @@
 			buildConfigurations = (
 				3C55627D18DE22B300989DBE /* Debug */,
 				3C55627E18DE22B300989DBE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3C55627F18DE22B300989DBE /* Build configuration list for PBXNativeTarget "StoryboardXibControllerDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3C55628018DE22B300989DBE /* Debug */,
-				3C55628118DE22B300989DBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
