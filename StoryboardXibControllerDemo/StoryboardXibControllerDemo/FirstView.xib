@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XibViewController">
@@ -26,16 +26,16 @@
                     </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sU1-EP-bAg" userLabel="Xib Loaded">
-                    <rect key="frame" x="101" y="20" width="118" height="21"/>
+                    <rect key="frame" x="101" y="40" width="117" height="20.5"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XIB Loaded:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSN-Xd-1CG">
-                            <rect key="frame" x="0.0" y="0.0" width="95" height="21"/>
+                            <rect key="frame" x="0.0" y="0.0" width="94.5" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LX6-We-qeB">
-                            <rect key="frame" x="95" y="0.0" width="23" height="21"/>
+                            <rect key="frame" x="94" y="0.0" width="22.5" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
@@ -52,16 +52,16 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpT-yY-m4w" userLabel="Loading Handler">
-                    <rect key="frame" x="83" y="51" width="155" height="21"/>
+                    <rect key="frame" x="84" y="71" width="153.5" height="21"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Handler:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmF-ue-Jb8">
-                            <rect key="frame" x="0.0" y="0.0" width="132" height="21"/>
+                            <rect key="frame" x="0.0" y="0.0" width="131.5" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIu-cY-0OE">
-                            <rect key="frame" x="132" y="0.0" width="23" height="21"/>
+                            <rect key="frame" x="131" y="0.0" width="22.5" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
@@ -82,7 +82,7 @@
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="ezZ-mj-PpG" secondAttribute="centerX" id="Ji3-nl-9qA"/>
                 <constraint firstAttribute="centerX" secondItem="fpT-yY-m4w" secondAttribute="centerX" id="QST-G3-wXL"/>
-                <constraint firstItem="sU1-EP-bAg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Wka-7M-XwJ"/>
+                <constraint firstItem="sU1-EP-bAg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="Wka-7M-XwJ"/>
                 <constraint firstItem="fpT-yY-m4w" firstAttribute="top" secondItem="sU1-EP-bAg" secondAttribute="bottom" constant="10" id="Zuz-Gy-NQn"/>
                 <constraint firstAttribute="centerX" secondItem="sU1-EP-bAg" secondAttribute="centerX" id="iXs-Px-guk"/>
                 <constraint firstAttribute="bottom" secondItem="ezZ-mj-PpG" secondAttribute="bottom" constant="20" id="w2a-GO-id9"/>
@@ -93,9 +93,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4">
-            <size key="portraitSize" width="320" height="568"/>
-            <size key="landscapeSize" width="568" height="320"/>
-        </simulatedScreenMetrics>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>

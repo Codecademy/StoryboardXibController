@@ -18,6 +18,7 @@
 		3C55628818DE261400989DBE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C55628718DE261400989DBE /* Storyboard.storyboard */; };
 		3C55628B18DE265900989DBE /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C55628A18DE265900989DBE /* FirstView.xib */; };
 		3C55628F18DE266800989DBE /* XibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C55628E18DE266800989DBE /* XibViewController.m */; };
+		3C5EBDD01A08341B0025191A /* ThirdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C5EBDCF1A08341B0025191A /* ThirdView.xib */; };
 		3CF8DCDB18ED0C5200A8CA8A /* StoryboardXibController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3CF8DCDA18ED0C5200A8CA8A /* StoryboardXibController.podspec */; };
 		3CF8DCDE18ED0C5800A8CA8A /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 3CF8DCDC18ED0C5800A8CA8A /* LICENSE.md */; };
 		3CF8DCDF18ED0C5800A8CA8A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3CF8DCDD18ED0C5800A8CA8A /* README.md */; };
@@ -121,6 +122,7 @@
 				3C55628718DE261400989DBE /* Storyboard.storyboard */,
 				3C55628A18DE265900989DBE /* FirstView.xib */,
 				3C0D62E31994020600F30D08 /* SecondView.xib */,
+				3C5EBDCF1A08341B0025191A /* ThirdView.xib */,
 				3C55628D18DE266800989DBE /* XibViewController.h */,
 				3C55628E18DE266800989DBE /* XibViewController.m */,
 			);
@@ -207,6 +209,7 @@
 				3CF8DCDF18ED0C5800A8CA8A /* README.md in Resources */,
 				3C55626618DE22B300989DBE /* Images.xcassets in Resources */,
 				3CF8DCDE18ED0C5800A8CA8A /* LICENSE.md in Resources */,
+				3C5EBDD01A08341B0025191A /* ThirdView.xib in Resources */,
 				3C0D62E41994020600F30D08 /* SecondView.xib in Resources */,
 				3C55628818DE261400989DBE /* Storyboard.storyboard in Resources */,
 			);
