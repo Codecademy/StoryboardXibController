@@ -216,7 +216,7 @@
 - (void)updateContainedViewTopConstraint
 {
     CGFloat offsetTop = 0;
-    if ( [self isWithinNavigationController] )
+    if ( self.alignContentToNavigationBar && [self isWithinNavigationController] )
     {
         offsetTop = [self navigationBarFrame].origin.y + [self navigationBarFrame].size.height;
     }
