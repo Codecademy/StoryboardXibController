@@ -119,6 +119,13 @@
     [self updateContainedViewTopConstraint];
 }
 
+- (void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+    
+    [self updateContainedViewTopConstraint];
+}
+
 - (BOOL)checkContainedViewDidLoad
 {
     if (self.containedController.isViewLoaded)
