@@ -15,8 +15,6 @@
 @property (strong, readwrite) UIStoryboardSegue *segue;
 @property (strong, readwrite) id segueInfo;
 
-@property (weak, readwrite) NSLayoutConstraint *containedViewTopLayoutContraint;
-
 @end
 
 @implementation StoryboardXibController
@@ -112,20 +110,6 @@
     [self createSubViewController];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
- 
-    [self updateContainedViewTopConstraint];
-}
-
-- (void)viewWillLayoutSubviews
-{
-    [super viewWillLayoutSubviews];
-    
-    [self updateContainedViewTopConstraint];
-}
-
 - (BOOL)checkContainedViewDidLoad
 {
     if (self.containedController.isViewLoaded)
@@ -183,62 +167,65 @@
 {
     UIView *containedView = self.containedController.view;
     
-    NSLayoutConstraint *containedViewTopLayoutContraint = [NSLayoutConstraint constraintWithItem:containedView
-                                                                                       attribute:NSLayoutAttributeTop
-                                                                                       relatedBy:NSLayoutRelationEqual
-                                                                                          toItem:self.view
-                                                                                       attribute:NSLayoutAttributeTop
-                                                                                      multiplier:1.0f
-                                                                                        constant:0];
-    [self.view addConstraint:containedViewTopLayoutContraint];
-    self.containedViewTopLayoutContraint = containedViewTopLayoutContraint;
-    
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:containedView
-                                                          attribute:NSLayoutAttributeLeft
-                                                          relatedBy:NSLayoutRelationEqual
-                                                             toItem:self.view
-                                                          attribute:NSLayoutAttributeLeft
-                                                         multiplier:1.0f
-                                                           constant:0.0] ];
-    
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:containedView
-                                                          attribute:NSLayoutAttributeBottom
-                                                          relatedBy:NSLayoutRelationEqual
-                                                             toItem:self.view
-                                                          attribute:NSLayoutAttributeBottom
-                                                         multiplier:1.0f
-                                                           constant:0.0] ];
-    
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:containedView
-                                                          attribute:NSLayoutAttributeRight
-                                                          relatedBy:NSLayoutRelationEqual
-                                                             toItem:self.view
-                                                          attribute:NSLayoutAttributeRight
-                                                         multiplier:1.0f
-                                                           constant:0.0] ];
-
-    [self updateContainedViewTopConstraint];
-}
-
-- (void)updateContainedViewTopConstraint
-{
-    CGFloat offsetTop = 0;
-    if ( self.alignContentToNavigationBar && [self isWithinNavigationController] )
+    NSLayoutConstraint *containedViewTopLayoutContraint;
+    if (self.alignToTopLayoutGuide)
     {
-        offsetTop = [self navigationBarFrame].origin.y + [self navigationBarFrame].size.height;
+        containedViewTopLayoutContraint = [NSLayoutConstraint constraintWithItem:containedView
+                                                                       attribute:NSLayoutAttributeTop
+                                                                       relatedBy:NSLayoutRelationEqual
+                                                                          toItem:self.topLayoutGuide
+                                                                       attribute:NSLayoutAttributeBottom
+                                                                      multiplier:1.0f
+                                                                        constant:0];
+    } else
+    {
+        containedViewTopLayoutContraint = [NSLayoutConstraint constraintWithItem:containedView
+                                                                       attribute:NSLayoutAttributeTop
+                                                                       relatedBy:NSLayoutRelationEqual
+                                                                          toItem:self.view
+                                                                       attribute:NSLayoutAttributeTop
+                                                                      multiplier:1.0f
+                                                                        constant:0];
     }
-    self.containedViewTopLayoutContraint.constant = offsetTop;
-}
-
-- (BOOL)isWithinNavigationController
-{
-    return self.navigationController != nil;
-}
-
-- (CGRect)navigationBarFrame
-{
-    return self.navigationController.navigationBar.frame;
-    //[self.navigationController.navigationBar convertRect:self.navigationController.navigationBar.frame toView:self.view];
+    [self.view addConstraint:containedViewTopLayoutContraint];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:containedView
+                                                          attribute:NSLayoutAttributeLeft
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeLeft
+                                                         multiplier:1.0f
+                                                           constant:0.0] ];
+    
+    NSLayoutConstraint *containedViewBottomLayoutContraint;
+    if (self.alignToBottomLayoutGuide)
+    {
+        containedViewBottomLayoutContraint = [NSLayoutConstraint constraintWithItem:containedView
+                                                                       attribute:NSLayoutAttributeBottom
+                                                                       relatedBy:NSLayoutRelationEqual
+                                                                          toItem:self.bottomLayoutGuide
+                                                                       attribute:NSLayoutAttributeTop
+                                                                      multiplier:1.0f
+                                                                        constant:0];
+    } else
+    {
+        containedViewBottomLayoutContraint = [NSLayoutConstraint constraintWithItem:containedView
+                                                                       attribute:NSLayoutAttributeBottom
+                                                                       relatedBy:NSLayoutRelationEqual
+                                                                          toItem:self.view
+                                                                       attribute:NSLayoutAttributeBottom
+                                                                      multiplier:1.0f
+                                                                        constant:0];
+    }
+    [self.view addConstraint:containedViewBottomLayoutContraint];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:containedView
+                                                          attribute:NSLayoutAttributeRight
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeRight
+                                                         multiplier:1.0f
+                                                           constant:0.0] ];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

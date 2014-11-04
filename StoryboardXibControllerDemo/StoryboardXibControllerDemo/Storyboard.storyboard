@@ -64,7 +64,8 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="screenControllerClass" value="XibViewController"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="screenNib" value="SecondView"/>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="alignContentToNavigationBar" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="alignToTopLayoutGuide" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="alignToBottomLayoutGuide" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="KCG-Ai-Gye" kind="push" identifier="Next" id="a40-TV-CRM"/>
@@ -91,7 +92,8 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="screenControllerClass" value="XibViewController"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="screenNib" value="ThirdView"/>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="alignContentToNavigationBar" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="alignToTopLayoutGuide" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="alignToBottomLayoutGuide" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0nP-RK-EHz" userLabel="First Responder" sceneMemberID="firstResponder"/>
