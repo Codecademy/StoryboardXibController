@@ -55,6 +55,21 @@ Once you've installed the class:
 
 * Enjoy!
 
+Additional Configuration
+---
+* To align the contained view with the Top Layout Guide or Bottom Layout Guide toggle the two view controller properties:
+	* `Align To Top Layout Guide`
+	* `Align To Bottom Layout Guide`
+	
+![screenAlignToLayoutGuide](https://github.com/Codecademy/StoryboardXibController/blob/master/README/AttributesAlignToGuides.png?raw=true)
+
+* Or if you're pre-Xcode6 add attributes of `BOOL` value with the **Key Paths**:
+	* `alignToTopLayoutGuide`
+	* `alignToBottomLayoutGuide`
+
+Thanks to @fatuhoku for the idea and assistance in developing the feature.
+
+
 Contributing
 ---
 If you have any ideas, suggestions or bugs to report please [create an issue](https://github.com/Codecademy/StoryboardXibController/issues/new) labeled *feature* or *bug* (check to see if the issue exists first please!). Or suggest a pull request!
