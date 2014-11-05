@@ -157,7 +157,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C55627C18DE22B300989DBE /* Build configuration list for PBXNativeTarget "StoryboardXibControllerDemo" */;
 			buildPhases = (
-				2EFB50871DB64E10ADAC4858 /* Check Pods Manifest.lock */,
 				3C55624C18DE22B300989DBE /* Sources */,
 				3C55624D18DE22B300989DBE /* Frameworks */,
 				3C55624E18DE22B300989DBE /* Resources */,
@@ -218,20 +217,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2EFB50871DB64E10ADAC4858 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-		};
 		774F9434C3A1478CB6E2F0F7 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
