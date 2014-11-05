@@ -67,7 +67,7 @@ Additional Configuration
 	* `alignToTopLayoutGuide`
 	* `alignToBottomLayoutGuide`
 
-Thanks to @fatuhoku for the idea and assistance in developing the feature.
+Thanks to [@fatuhoku](https://github.com/fatuhoku) for the idea and assistance in developing the feature.
 
 
 Contributing
