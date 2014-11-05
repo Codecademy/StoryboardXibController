@@ -36,7 +36,7 @@
 
 - (IBAction)segueThroughParentWithSenderText:(id)sender
 {
-    [self.storyboardXibController performSegueWithIdentifier:@"Second" sender:@"YES"];
+    [self.storyboardXibController performSegueWithIdentifier:@"Next" sender:@"YES"];
 }
 
 - (void)storyboardXibLoadedBy:(StoryboardXibController *)storyboardXibController
