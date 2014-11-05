@@ -20,6 +20,9 @@
 @property (readwrite) IBInspectable NSString *screenNib;
 @property (readwrite) IBInspectable NSString *nibBundleName;
 
+@property (readwrite) IBInspectable BOOL alignToTopLayoutGuide;
+@property (readwrite) IBInspectable BOOL alignToBottomLayoutGuide;
+
 @property (strong, readonly) UIViewController *containedController;
 
 @property (strong, readwrite) void (^containedControllerLoadedHandler)(StoryboardXibController *storyboardXibController);

@@ -6,8 +6,3 @@ xcodeproj 'StoryboardXibControllerDemo/StoryboardXibControllerDemo.xcodeproj/'
 target "StoryboardXibControllerDemo" do
   pod 'StoryboardXibController', :path => './'
 end
-
-target "StoryboardXibControllerDemoTests" do
-
-end
-

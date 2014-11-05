@@ -1,6 +1,6 @@
 PODS:
   - SegueingInfo (1.0.0)
-  - StoryboardXibController (1.5.2):
+  - StoryboardXibController (1.6.1):
     - SegueingInfo
 
 DEPENDENCIES:
@@ -12,6 +12,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   SegueingInfo: 674b86e23d6db7f005e146919fef0e3078f70efb
-  StoryboardXibController: e9db1ef9e8e7fd0ebec2c77ed11ca88250587d4d
+  StoryboardXibController: 40040742d1a53299c2be20ac3223f424685301f1
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.34.4
