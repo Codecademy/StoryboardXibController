@@ -7,7 +7,7 @@ StoryboardXibController
 
 **StoryboardXibController** is a utility class made to separate complex view controllers and view data out of your storyboard and into your Xibs, all within Xcode's Interface Builder.
 
-Using this class you can easily load an Xib from within a storyboard at runtime. Currently this is restricted to Xib files whose **File's Owner** is a `UIViewController` or `UIViewController` subclass.
+Using this class you can easily load an Xib from within a storyboard at runtime. Currently this is restricted to Xib files whose **File's Owner** is a `UIView` or `UIViewController` subclass.
 
 Installation
 ---
